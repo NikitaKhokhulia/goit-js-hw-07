@@ -33,29 +33,8 @@ function handleOriginalImg(event) {
 
   const lightbox = new SimpleLightbox(".gallery a", {
     captionsData: "alt",
-    captionDelay: 5000,
+    captionDelay: 250,
 
     /* options */
   });
-
-  //   const instance = basicLightbox.create(
-  //     `
-  //     <img src=${originalImg} width="800" height="600">
-  // `,
-  //     {
-  //       onClose: (instance) => {
-  //         galleryListEl.removeEventListener("keydown", handleCloseModal);
-  //       },
-  //     }
-  //   );
-
-  //   instance.show();
-
-  //   galleryListEl.addEventListener("keydown", handleCloseModal);
-
-  //   function handleCloseModal(event) {
-  //     if (event.key === "Escape") {
-  //       instance.close();
-  //     }
-  //   }
 }
