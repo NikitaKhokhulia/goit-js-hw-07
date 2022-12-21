@@ -22,19 +22,9 @@ galleryListEl.insertAdjacentHTML("afterbegin", createGalleryItems);
 
 // console.log(createGalleryItems);
 
-galleryListEl.addEventListener("click", handleOriginalImg);
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
 
-function handleOriginalImg(event) {
-  event.preventDefault();
-  if (event.target.nodeName !== "IMG") {
-    return;
-  }
-  let originalImg = event.target.dataset.source;
-
-  const lightbox = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-
-    /* options */
-  });
-}
+  /* options */
+});
